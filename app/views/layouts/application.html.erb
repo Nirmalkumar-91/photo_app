@@ -52,10 +52,9 @@
             <li><%= link_to "Link2", "/path2"  %></li>
             <li><%= link_to "Link3", "/path3"  %></li>
             <% if user_signed_in? %>
-                <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-danger my-2 my-sm-0" %>
-              
+                <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-danger logbtn" %>
             <% else %>
-              <%= link_to 'Sign In', user_session_path, class: "btn btn-success" %>
+              <%= link_to 'Sign In', user_session_path, class: "btn btn-success logbtn" %>
             <% end %>
           </ul>
           
